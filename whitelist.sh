@@ -5,7 +5,7 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 # Define .env path next to the script
 ENV_FILE="$SCRIPT_DIR/.env"
 # Load .env file
-if [[ -f .env ]]; then
+if [[ -f $ENV_FILE ]]; then
 	set -a
 	source $ENV_FILE
 	set +a
